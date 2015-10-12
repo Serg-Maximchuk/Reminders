@@ -18,7 +18,7 @@ public class HomeController {
 		list.add(text);
 		System.out.println("Adding item: " + text);
 		System.out.println(list);
-		Writer.writeToFile(list);
+		Writer.writeToAnswerFile(list);
 	}
 	
 	@RequestMapping(value = "/delete", method = RequestMethod.GET)
@@ -26,7 +26,7 @@ public class HomeController {
 		list.remove(text);
 		System.out.println("Deleting item: " + text);
 		System.out.println(list);
-		Writer.writeToFile(list);
+		Writer.writeToAnswerFile(list);
 	}
 	
 	@RequestMapping(value = "/update", method = RequestMethod.GET)
@@ -34,7 +34,7 @@ public class HomeController {
 		list.set(id, text);
 		System.out.println("Updating item: " + text);
 		System.out.println(list);
-		Writer.writeToFile(list);
+		Writer.writeToAnswerFile(list);
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
