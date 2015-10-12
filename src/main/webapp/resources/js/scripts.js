@@ -3,7 +3,7 @@
 
 	//generates a unique id
 	function generateId() {
-		return "reminder-" + count;//+new Date();    
+		return count;
 	}
 	//saves an item to localStorage
 	var saveReminder = function(id, content) {
@@ -132,10 +132,6 @@
 							removeReminder(id);
 							$.ajax({
 								url : 'delete',
-								type : 'GET',
-								dataType : 'json',
-								contentType : 'application/json',
-								mimeType : 'application/json',
 								data : ({
 									id : id,
 									text : value

@@ -12,14 +12,14 @@ public class Writer {
 	public static void writeToAnswerFile(List<?> list) {
 
 		BufferedWriter bufWriter;
-		PrintWriter Writer;
+		PrintWriter writer;
 		File answerFile = new File("answerFile.txt");
 
 		try {
 			bufWriter = new BufferedWriter(new FileWriter(answerFile));
-			Writer = new PrintWriter(bufWriter, true);
-			Writer.print(list);
-			Writer.close();
+			writer = new PrintWriter(bufWriter, true);
+			writer.print(list);
+			writer.close();
 		}
 
 		catch (IOException e) {

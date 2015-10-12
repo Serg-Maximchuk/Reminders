@@ -10,7 +10,7 @@
 <title>Serhii Maximchuk</title>
 
 <!--
-	sps Sara Soueidan za good animation 
+	sps Sara Soueidan za klasnu animaciyu
 	Thx Sara Soueidan for wonderful animation
 	https://github.com/sarasoueidan/creative-list-effects -->
 <link rel="stylesheet" href="resources/css/styles.css">
