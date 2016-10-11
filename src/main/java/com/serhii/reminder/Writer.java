@@ -8,22 +8,20 @@ import java.io.PrintWriter;
 import java.util.List;
 
 public class Writer {
-	
-	public static void writeToAnswerFile(List<?> list) {
 
-		BufferedWriter bufWriter;
-		PrintWriter writer;
-		File answerFile = new File("answerFile.txt");
+    public static void writeToAnswerFile(List<?> list) {
 
-		try {
-			bufWriter = new BufferedWriter(new FileWriter(answerFile));
-			writer = new PrintWriter(bufWriter, true);
-			writer.print(list);
-			writer.close();
-		}
+        BufferedWriter bufWriter;
+        PrintWriter writer;
+        File answerFile = new File("answerFile.txt");
 
-		catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+        try {
+            bufWriter = new BufferedWriter(new FileWriter(answerFile));
+            writer = new PrintWriter(bufWriter, true);
+            writer.print(list);
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
